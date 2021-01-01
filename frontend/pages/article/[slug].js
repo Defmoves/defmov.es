@@ -16,17 +16,20 @@ const Article = ({ article, categories }) => {
     article: true,
   };
 
+  console.log(article)
+
   return (
     <Layout categories={categories}>
       <Seo seo={seo} />
       <div
         id="banner"
-        className="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light uk-padding uk-margin"
+        className="uk-height-medium uk-flex uk-flex-center uk-flex-bottom uk-background-cover uk-light "
         data-src={imageUrl}
         data-srcset={imageUrl}
         data-uk-img
       >
         <h1>{article.title}</h1>
+        <div id='bar'/>
       </div>
       <div className="uk-section">
         <div className="uk-container uk-container-small">

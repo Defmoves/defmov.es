@@ -11,11 +11,11 @@ const Card = ({ article }) => {
             <Image image={article.image} />
           </div>
           <div className="uk-card-body">
-            <p id="category" className="uk-text-uppercase">
-              {article.category.name}
-            </p>
             <p id="title" className="uk-text-large">
               {article.title}
+            </p>
+            <p id="category" className="uk-text-uppercase">
+              {article.category.name}
             </p>
           </div>
         </div>

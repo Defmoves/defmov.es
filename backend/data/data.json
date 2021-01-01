@@ -136,10 +136,10 @@
     }
   ],
   "global": {
-    "siteName":"Strapi Blog",
+    "siteName":"defmov.es",
     "defaultSeo":{
       "metaTitle":"Page",
-      "metaDescription":"A blog made with Strapi",
+      "metaDescription":"A blog",
       "shareImage":null
     },
     "favicon":null
