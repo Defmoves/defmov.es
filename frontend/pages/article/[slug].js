@@ -33,6 +33,7 @@ const Article = ({ article, categories }) => {
       </div>
       <div className="uk-section">
         <div className="uk-container uk-container-small">
+        <h3>{article.description}</h3>
           <ReactMarkdown children={article.content} escapeHtml={false} />
           <hr className="uk-divider-small" />
           <div className="uk-grid-small uk-flex-left" data-uk-grid="true">
@@ -55,6 +56,9 @@ const Article = ({ article, categories }) => {
               <p className="uk-text-meta uk-margin-remove-top">
                 <Moment format="MMM Do YYYY">{article.publishedAt}</Moment>
               </p>
+              <p className="uk-text-meta">
+                Image By: <a href={article.creditHref} target='_blank'>{article.creditSource}</a>
+              </p>              
             </div>
           </div>
         </div>
