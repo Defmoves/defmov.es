@@ -16,7 +16,7 @@ const Article = ({ article, categories }) => {
     article: true,
   };
 
-  console.log(article)
+  console.log(article);
 
   return (
     <Layout categories={categories}>
@@ -29,11 +29,11 @@ const Article = ({ article, categories }) => {
         data-uk-img
       >
         <h1>{article.title}</h1>
-        <div id='bar'/>
+        <div id="bar" />
       </div>
       <div className="uk-section">
         <div className="uk-container uk-container-small">
-        <h3>{article.description}</h3>
+          <h3>{article.description}</h3>
           <ReactMarkdown children={article.content} escapeHtml={false} />
           <hr className="uk-divider-small" />
           <div className="uk-grid-small uk-flex-left" data-uk-grid="true">
@@ -57,8 +57,11 @@ const Article = ({ article, categories }) => {
                 <Moment format="MMM Do YYYY">{article.publishedAt}</Moment>
               </p>
               <p className="uk-text-meta">
-                Image By: <a href={article.creditHref} target='_blank'>{article.creditSource}</a>
-              </p>              
+                Image By:{" "}
+                <a href={article.creditHref} target="_blank">
+                  {article.creditSource}
+                </a>
+              </p>
             </div>
           </div>
         </div>
