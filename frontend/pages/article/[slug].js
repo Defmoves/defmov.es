@@ -33,7 +33,7 @@ const Article = ({ article, categories }) => {
       </div>
       <div className="uk-section">
         <div className="uk-container uk-container-small">
-          <ReactMarkdown source={article.content} escapeHtml={false} />
+          <ReactMarkdown children={article.content} escapeHtml={false} />
           <hr className="uk-divider-small" />
           <div className="uk-grid-small uk-flex-left" data-uk-grid="true">
             <div>
@@ -53,7 +53,7 @@ const Article = ({ article, categories }) => {
                 By {article.author.name}
               </p>
               <p className="uk-text-meta uk-margin-remove-top">
-                <Moment format="MMM Do YYYY">{article.published_at}</Moment>
+                <Moment format="MMM Do YYYY">{article.publishedAt}</Moment>
               </p>
             </div>
           </div>
